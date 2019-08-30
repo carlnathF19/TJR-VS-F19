@@ -1,4 +1,4 @@
-﻿Module Module1
+﻿Module HelloClass
 
     Sub Main()
         Console.WriteLine("Hello RCET0265")
