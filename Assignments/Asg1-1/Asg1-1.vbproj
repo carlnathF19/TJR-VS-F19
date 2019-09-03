@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F36A98DE-1590-4B6F-B999-FD1B1D68A173}</ProjectGuid>
+    <ProjectGuid>{AD211E78-46AE-403F-919E-F3130A5F4D8B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Asg1_1.My.MyApplication</StartupObject>
     <RootNamespace>Asg1_1</RootNamespace>
@@ -42,7 +42,7 @@
     <OptionCompare>Binary</OptionCompare>
   </PropertyGroup>
   <PropertyGroup>
-    <OptionStrict>Off</OptionStrict>
+    <OptionStrict>On</OptionStrict>
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
