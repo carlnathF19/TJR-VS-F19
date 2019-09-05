@@ -18,6 +18,6 @@ Public Class Form1
     End Sub
 
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
-        DisplayLabel.Text = "change"
+        DisplayLabel.Text = ""
     End Sub
 End Class
