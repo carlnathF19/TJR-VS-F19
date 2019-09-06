@@ -25,7 +25,7 @@ Partial Class DataConversionForm
         Me.RunButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.FirstTextBox = New System.Windows.Forms.TextBox()
-        Me.SecondBox = New System.Windows.Forms.TextBox()
+        Me.SecondTextBox = New System.Windows.Forms.TextBox()
         Me.ResultTextBox = New System.Windows.Forms.TextBox()
         Me.FirstLabel = New System.Windows.Forms.Label()
         Me.SecondLabel = New System.Windows.Forms.Label()
@@ -58,12 +58,12 @@ Partial Class DataConversionForm
         Me.FirstTextBox.Size = New System.Drawing.Size(349, 20)
         Me.FirstTextBox.TabIndex = 2
         '
-        'SecondBox
+        'SecondTextBox
         '
-        Me.SecondBox.Location = New System.Drawing.Point(56, 68)
-        Me.SecondBox.Name = "SecondBox"
-        Me.SecondBox.Size = New System.Drawing.Size(349, 20)
-        Me.SecondBox.TabIndex = 3
+        Me.SecondTextBox.Location = New System.Drawing.Point(56, 68)
+        Me.SecondTextBox.Name = "SecondTextBox"
+        Me.SecondTextBox.Size = New System.Drawing.Size(349, 20)
+        Me.SecondTextBox.TabIndex = 3
         '
         'ResultTextBox
         '
@@ -118,7 +118,7 @@ Partial Class DataConversionForm
         Me.Controls.Add(Me.SecondLabel)
         Me.Controls.Add(Me.FirstLabel)
         Me.Controls.Add(Me.ResultTextBox)
-        Me.Controls.Add(Me.SecondBox)
+        Me.Controls.Add(Me.SecondTextBox)
         Me.Controls.Add(Me.FirstTextBox)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.RunButton)
@@ -132,7 +132,7 @@ Partial Class DataConversionForm
     Friend WithEvents RunButton As Button
     Friend WithEvents ClearButton As Button
     Friend WithEvents FirstTextBox As TextBox
-    Friend WithEvents SecondBox As TextBox
+    Friend WithEvents SecondTextBox As TextBox
     Friend WithEvents ResultTextBox As TextBox
     Friend WithEvents FirstLabel As Label
     Friend WithEvents SecondLabel As Label
