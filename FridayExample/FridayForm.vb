@@ -1,10 +1,8 @@
 ﻿Option Explicit On
 Public Class FridayForm
-
-
-
     Private Sub DoStuffButton_Click(sender As Object, e As EventArgs) Handles DoStuffButton.Click
-        FridayExample() 'Call the FridayExample sub
+        'FridayExample() 'Call the FridayExample sub
+        concatinateStringInLoop()
     End Sub
     Sub FridayExample()
         Dim statementOne As String
@@ -42,6 +40,17 @@ Public Class FridayForm
 
     End Sub
 
+    Sub concatinateStringInLoop()
+        Dim someKindaString As String
+
+        someKindaString = "hello"
+        For i = 1 To 100
+            someKindaString &= "!"
+            Console.WriteLine(someKindaString)
+        Next
+        Console.WriteLine("All Done!" & vbNewLine & "Have a nice day....")
+
+    End Sub
 
 
 End Class
