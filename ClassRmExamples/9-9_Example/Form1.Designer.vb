@@ -22,10 +22,64 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.components = New System.ComponentModel.Container()
+        Me.ExampleTextBox = New System.Windows.Forms.TextBox()
+        Me.ActionButton = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.SuspendLayout()
+        '
+        'ExampleTextBox
+        '
+        Me.ExampleTextBox.Location = New System.Drawing.Point(53, 37)
+        Me.ExampleTextBox.Name = "ExampleTextBox"
+        Me.ExampleTextBox.Size = New System.Drawing.Size(100, 26)
+        Me.ExampleTextBox.TabIndex = 0
+        '
+        'ActionButton
+        '
+        Me.ActionButton.Location = New System.Drawing.Point(519, 295)
+        Me.ActionButton.Name = "ActionButton"
+        Me.ActionButton.Size = New System.Drawing.Size(199, 96)
+        Me.ActionButton.TabIndex = 4
+        Me.ActionButton.Text = "Do The Stuff"
+        Me.ToolTip1.SetToolTip(Me.ActionButton, "Push this button for stuff")
+        Me.ActionButton.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(53, 86)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox1.TabIndex = 1
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(53, 137)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox2.TabIndex = 3
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.ActionButton)
+        Me.Controls.Add(Me.ExampleTextBox)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
+    Friend WithEvents ExampleTextBox As TextBox
+    Friend WithEvents ActionButton As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
