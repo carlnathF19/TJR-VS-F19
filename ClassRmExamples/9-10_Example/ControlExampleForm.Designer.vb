@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class ControlExampleForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -31,8 +31,8 @@ Partial Class Form1
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.HideTheButton = New System.Windows.Forms.Button()
+        Me.ShowKittyButton = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
@@ -69,8 +69,8 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.CheckBox3)
         Me.GroupBox1.Controls.Add(Me.CheckBox2)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.HideTheButton)
+        Me.GroupBox1.Controls.Add(Me.ShowKittyButton)
         Me.GroupBox1.Location = New System.Drawing.Point(813, 33)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(456, 297)
@@ -140,27 +140,27 @@ Partial Class Form1
         Me.CheckBox1.Text = "CheckBox1"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'HideTheButton
         '
-        Me.Button2.Location = New System.Drawing.Point(64, 221)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(137, 53)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.HideTheButton.Location = New System.Drawing.Point(64, 221)
+        Me.HideTheButton.Name = "HideTheButton"
+        Me.HideTheButton.Size = New System.Drawing.Size(137, 53)
+        Me.HideTheButton.TabIndex = 1
+        Me.HideTheButton.Text = "Hide Button4"
+        Me.HideTheButton.UseVisualStyleBackColor = True
         '
-        'Button1
+        'ShowKittyButton
         '
-        Me.Button1.Location = New System.Drawing.Point(207, 221)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(137, 53)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ShowKittyButton.Location = New System.Drawing.Point(207, 221)
+        Me.ShowKittyButton.Name = "ShowKittyButton"
+        Me.ShowKittyButton.Size = New System.Drawing.Size(137, 53)
+        Me.ShowKittyButton.TabIndex = 0
+        Me.ShowKittyButton.Text = "Show &Kitty"
+        Me.ShowKittyButton.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(143, 350)
+        Me.Button3.Location = New System.Drawing.Point(97, 231)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 25)
         Me.Button3.TabIndex = 3
@@ -169,9 +169,9 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(48, 350)
+        Me.Button4.Location = New System.Drawing.Point(824, 353)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 25)
+        Me.Button4.Size = New System.Drawing.Size(200, 130)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
@@ -179,7 +179,7 @@ Partial Class Form1
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(174, 220)
+        Me.RadioButton4.Location = New System.Drawing.Point(15, 141)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(133, 24)
         Me.RadioButton4.TabIndex = 5
@@ -190,7 +190,7 @@ Partial Class Form1
         'RadioButton5
         '
         Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(174, 250)
+        Me.RadioButton5.Location = New System.Drawing.Point(15, 171)
         Me.RadioButton5.Name = "RadioButton5"
         Me.RadioButton5.Size = New System.Drawing.Size(133, 24)
         Me.RadioButton5.TabIndex = 6
@@ -201,7 +201,7 @@ Partial Class Form1
         'RadioButton6
         '
         Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(174, 280)
+        Me.RadioButton6.Location = New System.Drawing.Point(15, 201)
         Me.RadioButton6.Name = "RadioButton6"
         Me.RadioButton6.Size = New System.Drawing.Size(133, 24)
         Me.RadioButton6.TabIndex = 7
@@ -211,16 +211,14 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackgroundImage = Global._9_10_Example.My.Resources.Resources.kitten_report
-        Me.PictureBox2.Image = Global._9_10_Example.My.Resources.Resources.kitten_report
-        Me.PictureBox2.Location = New System.Drawing.Point(293, 208)
+        Me.PictureBox2.Location = New System.Drawing.Point(203, 154)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(563, 395)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 9
         Me.PictureBox2.TabStop = False
         '
-        'Form1
+        'ControlExampleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -234,8 +232,8 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MaskedTextBox1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "ControlExampleForm"
+        Me.Text = "Control Examples"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -253,8 +251,8 @@ Partial Class Form1
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents HideTheButton As Button
+    Friend WithEvents ShowKittyButton As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents RadioButton4 As RadioButton
