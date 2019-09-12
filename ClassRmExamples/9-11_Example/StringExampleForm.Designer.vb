@@ -66,11 +66,12 @@ Partial Class StringExampleForm
         '
         'ExitButton
         '
+        Me.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ExitButton.Location = New System.Drawing.Point(613, 355)
         Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(156, 59)
+        Me.ExitButton.Size = New System.Drawing.Size(156, 60)
         Me.ExitButton.TabIndex = 4
-        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.Text = "E&xit"
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'ClearButton
@@ -79,16 +80,17 @@ Partial Class StringExampleForm
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(156, 60)
         Me.ClearButton.TabIndex = 5
-        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.Text = "&Clear"
         Me.ClearButton.UseVisualStyleBackColor = True
         '
         'DisplayButton
         '
+        Me.DisplayButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.DisplayButton.Location = New System.Drawing.Point(289, 355)
         Me.DisplayButton.Name = "DisplayButton"
         Me.DisplayButton.Size = New System.Drawing.Size(156, 59)
         Me.DisplayButton.TabIndex = 6
-        Me.DisplayButton.Text = "Show"
+        Me.DisplayButton.Text = "&Show"
         Me.DisplayButton.UseVisualStyleBackColor = True
         '
         'DisplayLabel
@@ -100,8 +102,10 @@ Partial Class StringExampleForm
         '
         'StringExampleForm
         '
+        Me.AcceptButton = Me.DisplayButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.DisplayLabel)
         Me.Controls.Add(Me.DisplayButton)
