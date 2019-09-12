@@ -22,6 +22,7 @@ Partial Class StringExampleForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.FirstNameLabel = New System.Windows.Forms.Label()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
         Me.LastNamtTextBox = New System.Windows.Forms.TextBox()
@@ -30,6 +31,7 @@ Partial Class StringExampleForm
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.DisplayButton = New System.Windows.Forms.Button()
         Me.DisplayLabel = New System.Windows.Forms.Label()
+        Me.StringExampleFormToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'FirstNameLabel
@@ -47,6 +49,7 @@ Partial Class StringExampleForm
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
         Me.FirstNameTextBox.Size = New System.Drawing.Size(176, 26)
         Me.FirstNameTextBox.TabIndex = 1
+        Me.StringExampleFormToolTip.SetToolTip(Me.FirstNameTextBox, "Enter first name here")
         '
         'LastNamtTextBox
         '
@@ -54,6 +57,7 @@ Partial Class StringExampleForm
         Me.LastNamtTextBox.Name = "LastNamtTextBox"
         Me.LastNamtTextBox.Size = New System.Drawing.Size(176, 26)
         Me.LastNamtTextBox.TabIndex = 2
+        Me.StringExampleFormToolTip.SetToolTip(Me.LastNamtTextBox, "Enter last name here")
         '
         'LastNameLabel
         '
@@ -72,6 +76,7 @@ Partial Class StringExampleForm
         Me.ExitButton.Size = New System.Drawing.Size(156, 60)
         Me.ExitButton.TabIndex = 4
         Me.ExitButton.Text = "E&xit"
+        Me.StringExampleFormToolTip.SetToolTip(Me.ExitButton, "Click to Exit, Alt+x, Esc")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'ClearButton
@@ -81,6 +86,7 @@ Partial Class StringExampleForm
         Me.ClearButton.Size = New System.Drawing.Size(156, 60)
         Me.ClearButton.TabIndex = 5
         Me.ClearButton.Text = "&Clear"
+        Me.StringExampleFormToolTip.SetToolTip(Me.ClearButton, "Clear Display, Alt+c")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
         'DisplayButton
@@ -91,6 +97,7 @@ Partial Class StringExampleForm
         Me.DisplayButton.Size = New System.Drawing.Size(156, 59)
         Me.DisplayButton.TabIndex = 6
         Me.DisplayButton.Text = "&Show"
+        Me.StringExampleFormToolTip.SetToolTip(Me.DisplayButton, "Click to Display, Alt+s, Enter")
         Me.DisplayButton.UseVisualStyleBackColor = True
         '
         'DisplayLabel
@@ -99,6 +106,7 @@ Partial Class StringExampleForm
         Me.DisplayLabel.Name = "DisplayLabel"
         Me.DisplayLabel.Size = New System.Drawing.Size(461, 121)
         Me.DisplayLabel.TabIndex = 7
+        Me.StringExampleFormToolTip.SetToolTip(Me.DisplayLabel, "Enter text above you want to display")
         '
         'StringExampleForm
         '
@@ -106,7 +114,7 @@ Partial Class StringExampleForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ExitButton
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 488)
         Me.Controls.Add(Me.DisplayLabel)
         Me.Controls.Add(Me.DisplayButton)
         Me.Controls.Add(Me.ClearButton)
@@ -115,7 +123,13 @@ Partial Class StringExampleForm
         Me.Controls.Add(Me.LastNamtTextBox)
         Me.Controls.Add(Me.FirstNameTextBox)
         Me.Controls.Add(Me.FirstNameLabel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(822, 544)
+        Me.MinimumSize = New System.Drawing.Size(822, 544)
         Me.Name = "StringExampleForm"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Concatinate Text"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -130,4 +144,5 @@ Partial Class StringExampleForm
     Friend WithEvents ClearButton As Button
     Friend WithEvents DisplayButton As Button
     Friend WithEvents DisplayLabel As Label
+    Friend WithEvents StringExampleFormToolTip As ToolTip
 End Class
